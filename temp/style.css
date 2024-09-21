@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(59, 187, 110), rgba(196, 199, 179, 0.877), rgb(211, 189, 92));
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    color: rgb(206, 19, 156);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.converter-container {
+    height: auto; 
+    max-width: 400px; 
+    width: 90%; 
+    background-color: rgb(36, 26, 56);
+    margin: 3rem auto;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 20px 5px darkgreen;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem; 
+}
+
+.converter-container input {
+    color: darkgreen;
+    text-align: center;
+    width: 100%; 
+    height: 2.5rem; 
+    margin: 1rem 0; 
+    border: none;
+    font-weight: 700;
+}
+
+.converter-container label {
+    margin-top: 1rem;
+    font-style: italic;
+    color: darkgreen;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+::placeholder {
+    text-align: center;
+    color: darkgreen;
+    font-weight: 600;
+}
+
+button {
+    width: 70%; 
+    height: 2.5rem;
+    border: none;
+    font-weight: 600;
+    background-color: teal;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 15px 4px white;
+    transition: 0.6s all ease;
+    margin: 1rem auto; /* Center the button */
+}
+
+button:hover {
+    background-color: white;
+    color: darkgreen;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#source-unit, #target-unit {
+    width: 100%; 
+    height: 2.5rem; 
+    font-size: 1rem;
+    font-weight: 600;
+    color: darkgreen;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1rem 0; 
+}
+
+body {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+}

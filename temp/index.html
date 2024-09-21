@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp Unit Converter</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>HEAT UNIT <br> CONVERTER</h1>
+    <div class="converter-container">
+        <label for="temp-input">Input Temperature</label>
+        <input id="temp-input" type="number" placeholder="Type Temperature">
+
+        <label for="source-unit">Convert From</label>
+        <select id="source-unit">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+
+        <label for="target-unit">Convert To</label>
+        <select id="target-unit">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+
+        <button onclick="convertTemperature()">Calculate</button>
+
+        <label for="output">Converted Value</label>
+        <input id="output" type="number" readonly>
+
+        <button onclick="clearFields()">Reset</button>
+    </div>
+    
+    <script src="style.js"></script>
+</body>
+</html>
